@@ -1,0 +1,155 @@
+:root{
+  --botton-color: rgb(0, 105, 70);
+  --body-color: rgb(233 244 255);
+  --text-color: rgb(97, 93, 93);
+  --card-color: rgb(255, 255, 255);
+}
+
+*{
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box;
+}
+
+.body{
+  background-color: var(--body-color);
+}
+
+.card{
+  background-color: var(--card-color);
+  height: 700px;
+  width: 600px;
+  justify-self: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.contact-us{
+  font-size: 25px;
+  color: var(--text-color);
+  padding: 0;
+}
+
+.name_section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.input_name{
+  display: block;
+  width: 250px;
+  font: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  height: 50px;  
+}
+
+.query_type_input{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  height: 50px; 
+  display: block;
+  width: 255px;
+}
+
+.email{
+  color: var(--text-color);
+  height: 40px;
+  width: 524px;
+  border-radius: 10px;
+  border: 2px solid rgb(233, 224, 224);
+}
+
+.input_email {
+  display: block;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  height: 40px;
+}
+
+.input_name:focus,
+.input_email:focus,
+#massage:focus {
+  border-color: #0d6efd;
+}
+
+button{
+  background-color: var(--botton-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover{
+  background-color: rgb(0, 80, 50);
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(0.98);
+  background-color: rgb(0, 60, 40);
+}
+
+.checks{
+  justify-content: space-between;
+  margin: 0px;
+  display: flex; 
+}
+
+
+/* error styles */
+.input-error{
+  border: 1px solid red;
+}
+
+.error-text{
+  color: red;
+}
+
+.input-success{
+  border: 1px solid green;
+}
+
+/* styles for smaller screens */
+@media (max-width: 700px) { 
+  .card{
+    width: 290px;
+    height: auto;
+    font-size: small;
+    justify-content: center;
+  }
+
+  .name_section{
+    display: block;
+  }
+
+  .checks{
+    display: block;
+    margin-right: 5px;
+    height: 100px;
+  }
+
+  .email{
+    width: 220px;
+  }
+
+  /* your original class wasn't used; keeping for completeness if you add it */
+  .query_type{
+    width: 220px;
+  }
+}

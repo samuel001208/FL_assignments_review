@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact_Page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="contact.css">
+  <script defer src="./contact.js"></script>
+</head>
+
+<body class="body">
+  <main class="card" id="card">
+    <form id="contact_form">
+      <section>
+        <h2 class="contact-us">Contact us</h2>
+      </section>
+
+      <!-- first name -->
+      <section>
+        <div class="name_section mb-3">
+
+          <div class="col name" id="first_name">
+            First Name
+            <input type="text" class="input_name" id="first_name_input" aria-label="First name">
+            <div class="error-message"></div>
+          </div>
+          <!-- last name -->
+          <div class="col" id="last_name">
+            Last Name
+            <input type="text" class="input_name" id="last_name_input" aria-label="Last name">
+            <div class="error-message"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- input email -->
+      Email Address:
+      <div class="mb-4 mt-2 email" id="email_field">
+        <input type="email" class="input_email" id="email_address">
+        <div class="error-message"></div>
+      </div>
+
+
+      <!-- query types -->
+      Query type:
+      <div class="checks mt-2 mb-3">
+        <div class="form-check query_type_input" id="general_inquiry_field">
+          <input class="form-check-input p-2 m-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label p-2 mt-1" for="flexRadioDefault1" id="general_inquiry">
+            General inquiry
+          </label>
+        </div>
+
+        <div class="form-check query_type_input" id="support_request_field">
+          <input class="form-check-input p-2 m-3" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label p-2 mt-1" for="flexRadioDefault2" id="support_request">
+            Support request
+          </label>
+        </div>
+      </div>
+
+
+      <!-- massage -->
+      <div class="mb-3" id="message_field">
+        <label for="massage" class="form-label mt-3">Messages :</label>
+        <textarea class="form-control" id="massage" rows="3"></textarea>
+        <div class="error-message"></div>
+      </div>
+
+        <!-- terms and conditions -->
+      <div id="terms_field">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="error-message"></div>
+      </div>
+
+      <!-- submit -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>   
+</body>
+</html>
