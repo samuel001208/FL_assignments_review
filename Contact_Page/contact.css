@@ -17,7 +17,7 @@
 
 .card{
   background-color: var(--card-color);
-  height: 700px;
+  height: 750px;
   width: 600px;
   justify-self: center;
   margin-top: 50px;
